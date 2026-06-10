@@ -1,4 +1,3 @@
-
 # User Story 1 - Criação de conta
 # Permita a um usuário criar uma conta no Jackut . Deve ser fornecido um login, uma senha e um nome com o qual o usuário será conhecido na rede.
 
