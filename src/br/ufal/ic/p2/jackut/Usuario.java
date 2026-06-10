@@ -29,6 +29,14 @@ public class Usuario implements Serializable {
 
     public boolean verificarSenha(String senha) { return this.senha.equals(senha); }
 
+    /**
+     * Retorna o valor de um atributo do perfil do usuario.
+     * O atributo "nome" e especial e retorna o nome do usuario.
+     *
+     * @param atributo nome do atributo
+     * @return valor do atributo
+     * @throws RuntimeException se o atributo nao estiver preenchido
+     */
     public String getAtributo(String atributo) {
         if ("nome".equals(atributo)) return nome;
         if (!perfil.containsKey(atributo))

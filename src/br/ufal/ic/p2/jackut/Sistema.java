@@ -97,7 +97,7 @@ public class Sistema {
             throw new RuntimeException("Usu\u00e1rio n\u00e3o cadastrado.");
         return usuario;
     }
-
+//comentario
     private Sessao getSessaoOuErro(String id) {
         if (id == null || id.isEmpty())
             throw new RuntimeException("Usu\u00e1rio n\u00e3o cadastrado.");
