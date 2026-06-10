@@ -1,23 +1,22 @@
 package br.ufal.ic.p2.jackut;
 
 /**
- * Representa uma sessão aberta de um usuário no sistema Jackut.
- * Uma sessão é criada ao abrir sessão com login e senha válidos e
- * é identificada por um id único.
+ * Sessao aberta de um usuario no Jackut.
+ * Contem id unico e o usuario logado.
  */
 public class Sessao {
 
-    /** Identificador único desta sessão. */
+    /** Identificador unico da sessao. */
     private final String id;
 
-    /** Usuário associado a esta sessão. */
+    /** Usuario logado nesta sessao. */
     private final Usuario usuario;
 
     /**
-     * Cria uma nova sessão para o usuário informado.
+     * Cria uma nova sessao para o usuario informado.
      *
-     * @param id      identificador único da sessão
-     * @param usuario usuário que abriu a sessão
+     * @param id      identificador unico da sessao
+     * @param usuario usuario logado
      */
     public Sessao(String id, Usuario usuario) {
         this.id = id;
@@ -25,18 +24,18 @@ public class Sessao {
     }
 
     /**
-     * Retorna o identificador desta sessão.
+     * Retorna o id da sessao.
      *
-     * @return id da sessão
+     * @return id da sessao
      */
     public String getId() {
         return id;
     }
 
     /**
-     * Retorna o usuário associado a esta sessão.
+     * Retorna o usuario desta sessao.
      *
-     * @return usuário da sessão
+     * @return usuario da sessao
      */
     public Usuario getUsuario() {
         return usuario;
